@@ -1,0 +1,95 @@
+/* 
+   Shilpa hang rai
+   12/06/2022
+*/
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: 
+   Date:   
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+html{
+   height: 100%;
+}
+
+body{
+   min-width: 640px;
+   max-width: 960px;
+   margin: 0 auto;
+   min-height: 100%;
+}
+
+img{
+   display: inline-block;
+}
+
+
+/* CSS Grid Styles */
+body{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+img#logo{
+   grid-column: 1/ 4;
+   width: 100%;
+}
+
+nav.horizontal, footer{
+   grid-column: 1/5;
+}
+aside{
+   grid-column: 2/4;
+}
+
+/* Horizontal Navigation List Styles */
+nav.horizontal li{
+   display: block;
+   width: 12.5%;
+   float: left;
+}
+
+
+/* Section Styles */
+section img{
+   width: 50%;
+   margin: 0 auto;
+}
+section p{
+   width: 70%;
+   margin: 0 auto;
+}
+
+
+
+/* Customer Comment Styles */
+
+aside{
+   width: 75%;
+   padding-bottom: 30px;
+   float: right;
+}
+aside:nth-of-type(odd){
+   float: left;
+   /* grid-column: 3/5; */
+   justify-self: right;
+}
+
+aside img{
+   float: left;
+   width: 20%;
+}
+aside p{
+   float: left;
+   width: 75%;
+   margin-left: 5%;
+}
